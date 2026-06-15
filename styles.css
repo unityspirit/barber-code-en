@@ -1,4 +1,4 @@
-/* ============================================================
+﻿/* ============================================================
    BARBER CODE — styles.css
    Premium Barbershop · Russian Version
    Design: Luxury Gold on Deep Dark
@@ -308,7 +308,7 @@ body {
   font-size: 1.1rem;
   font-weight: 400;
   letter-spacing: 0.1em;
-  color: rgba(255, 255, 255, 0.8);
+  color: #ffffff;
   text-decoration: none;
   padding: 12px 32px;
   border-radius: 8px;
@@ -460,7 +460,7 @@ body {
   font-family: var(--font-t);
   font-size: clamp(0.9rem, 1.8vw, 1.05rem);
   font-weight: 300;
-  color: rgba(255, 255, 255, 0.8);
+  color: #ffffff;
   text-shadow: var(--ts-dark);
   letter-spacing: 0.05em;
 }
@@ -650,7 +650,7 @@ body {
   font-family: var(--font-t);
   font-size: clamp(0.75rem, 1.1vw, 0.83rem);
   font-weight: 300;
-  color: rgba(255, 255, 255, 0.7);
+  color: #ffffff;
   text-shadow: var(--ts-dark);
   line-height: 1.5;
 }
@@ -747,7 +747,7 @@ body {
   font-family: var(--font-t);
   font-size: clamp(0.9rem, 1.6vw, 1.05rem);
   font-weight: 300;
-  color: rgba(255, 255, 255, 0.8);
+  color: #ffffff;
   text-shadow: var(--ts-dark);
   line-height: 1.6;
   max-width: 560px;
@@ -879,7 +879,7 @@ body {
   font-size: clamp(0.9rem, 1.6vw, 1rem);
   font-weight: 400;
   letter-spacing: 0.1em;
-  color: rgba(255, 255, 255, 0.7);
+  color: #ffffff;
   text-shadow: var(--ts-dark);
 }
 
@@ -887,7 +887,7 @@ body {
   font-family: var(--font-t);
   font-size: clamp(0.9rem, 1.5vw, 1rem);
   font-weight: 300;
-  color: rgba(255, 255, 255, 0.8);
+  color: #ffffff;
   text-shadow: var(--ts-dark);
   line-height: 1.7;
 }
@@ -933,7 +933,7 @@ body {
   font-size: 0.72rem;
   font-weight: 400;
   letter-spacing: 0.1em;
-  color: rgba(255, 255, 255, 0.6);
+  color: #ffffff;
   text-shadow: var(--ts-dark);
   margin-top: 4px;
 }
@@ -943,7 +943,7 @@ body {
   font-size: 0.85rem;
   font-weight: 400;
   letter-spacing: 0.1em;
-  color: rgba(255, 255, 255, 0.7);
+  color: #ffffff;
   text-shadow: var(--ts-dark);
 }
 
@@ -1119,7 +1119,7 @@ a.contact-value:hover { color: var(--gold); }
   font-family: var(--font-t);
   font-size: clamp(0.85rem, 1.3vw, 0.92rem);
   font-weight: 300;
-  color: rgba(255, 255, 255, 0.7);
+  color: #ffffff;
   text-shadow: var(--ts-dark);
 }
 
