@@ -1,6 +1,6 @@
 /* ============================================================
    BARBER CODE — styles.css
-   Premium Barbershop · Russian Version
+   Premium Barbershop · English Version
    Design: Luxury Gold on Deep Dark
    ============================================================ */
 
@@ -91,6 +91,15 @@ body {
   gap: 20px;
 }
 
+.loader-logo-img {
+  display: block;
+  width: 80px;
+  height: 80px;
+  margin-bottom: 8px;
+  opacity: 0.85;
+  filter: drop-shadow(0 0 12px rgba(201, 168, 76, 0.3));
+}
+
 .loader-logo {
   font-family: var(--font-h);
   font-style: italic;
@@ -124,6 +133,15 @@ body {
   letter-spacing: 0.2em;
   color: rgba(201, 168, 76, 0.5);
   text-transform: uppercase;
+}
+
+.loader-pct {
+  font-family: var(--font-t);
+  font-size: 0.85rem;
+  font-weight: 400;
+  letter-spacing: 0.15em;
+  color: rgba(201, 168, 76, 0.6);
+  margin: 0;
 }
 
 /* === NAVBAR === */
@@ -625,11 +643,11 @@ body {
 .step-number {
   font-family: var(--font-h);
   font-style: italic;
-  font-size: 0.75rem;
-  font-weight: 300;
+  font-size: 1.1rem;
+  font-weight: 400;
   letter-spacing: 0.2em;
-  color: var(--gold);
-  text-shadow: var(--ts-dark);
+  color: #e6c44d;
+  text-shadow: 0 0 16px rgba(201, 168, 76, 0.6), var(--ts-dark);
 }
 
 .step-icon {
@@ -1150,7 +1168,7 @@ a.contact-value:hover { color: var(--gold); }
   font-size: 0.68rem;
   font-weight: 400;
   letter-spacing: 0.15em;
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.9);
   text-shadow: var(--ts-dark);
   text-transform: uppercase;
   white-space: nowrap;
@@ -1212,7 +1230,7 @@ a.contact-value:hover { color: var(--gold); }
   font-size: 0.7rem;
   font-weight: 400;
   letter-spacing: 0.2em;
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.9);
   text-shadow: var(--ts-dark);
   text-transform: uppercase;
 }
@@ -1221,7 +1239,7 @@ a.contact-value:hover { color: var(--gold); }
   font-family: var(--font-t);
   font-size: 0.72rem;
   font-weight: 300;
-  color: rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.9);
   text-shadow: var(--ts-dark);
 }
 
