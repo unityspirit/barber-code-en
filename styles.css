@@ -1,4 +1,4 @@
-﻿/* ============================================================
+/* ============================================================
    BARBER CODE — styles.css
    Premium Barbershop · Russian Version
    Design: Luxury Gold on Deep Dark
@@ -186,7 +186,7 @@ body {
   font-size: 0.78rem;
   font-weight: 500;
   letter-spacing: 0.06em;
-  color: rgba(255, 255, 255, 0.75);
+  color: rgba(255, 255, 255, 0.9);
   text-decoration: none;
   padding: 6px 14px;
   border-radius: 20px;
@@ -530,7 +530,7 @@ body {
   font-family: var(--font-t);
   font-size: clamp(0.8rem, 1.2vw, 0.88rem);
   font-weight: 300;
-  color: rgba(255, 255, 255, 0.75);
+  color: rgba(255, 255, 255, 0.9);
   text-shadow: var(--ts-dark);
   line-height: 1.5;
 }
