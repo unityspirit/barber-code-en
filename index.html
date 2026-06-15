@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>BARBER CODE — Premium Barbershop</title>
+  <meta name="description" content="Premium barbershop. Classic cuts, hot shaves, beard styling. 5 master barbers, 6 years experience. Book your visit today." />
+  <meta name="keywords" content="barbershop, haircut, hot shave, beard styling, premium barber, men's grooming" />
+  <meta property="og:title" content="BARBER CODE — Premium Barbershop" />
+  <meta property="og:description" content="Classic cuts, hot shaves, beard styling. 5 master barbers, 6 years experience." />
+  <meta property="og:image" content="images/logo.png" />
+  <meta property="og:url" content="https://barbercode.ru" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en_US" />
+  <link rel="icon" type="image/png" href="images/logo.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="loader">
+    <div class="loader-inner">
+      <div class="loader-logo">BARBER <span class="accent-gold">CODE</span></div>
+      <div class="progress-track"><div id="progress-bar"></div></div>
+      <div class="loader-text">Loading...</div>
+    </div>
+  </div>
+  <canvas id="gl-canvas"></canvas>
+  <canvas id="particle-canvas"></canvas>
+  <div class="grain-overlay"></div>
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo"><img src="images/logo.png" alt="BARBER CODE" onerror="this.style.display='none'" /><span>BARBER <span class="accent-gold">CODE</span></span></a>
+      <ul class="nav-links">
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#portfolio" class="nav-link">Work</a></li>
+        <li><a href="#process" class="nav-link">Process</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#contact" class="nav-link">Book</a></li>
+      </ul>
+      <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+  <div class="nav-drawer" id="nav-drawer" hidden>
+    <div class="drawer-backdrop" id="drawer-backdrop"></div>
+    <div class="drawer-panel">
+      <button class="drawer-close" id="drawer-close">✕</button>
+      <ul>
+        <li><a href="#services" class="drawer-link">Services</a></li>
+        <li><a href="#portfolio" class="drawer-link">Work</a></li>
+        <li><a href="#process" class="drawer-link">Process</a></li>
+        <li><a href="#about" class="drawer-link">About</a></li>
+        <li><a href="#contact" class="drawer-link">Book</a></li>
+      </ul>
+    </div>
+  </div>
+  <div id="ui-layer"><div class="stage">
+    <section class="page is-active" data-index="0" id="hero">
+      <div class="hero-content">
+        <div class="hero-badge reveal-3d">EST. 2018</div>
+        <h1 class="hero-title reveal-3d">BARBER<br/><span class="accent-gold">CODE</span></h1>
+        <p class="hero-subtitle reveal-3d">The art of being a man</p>
+        <p class="hero-desc reveal-3d">Classic cuts, hot shaves, grooming rituals.<br/>For those who value excellence.</p>
+        <div class="hero-btns reveal-3d">
+          <a href="#contact" class="btn-primary">Book Now</a>
+          <a href="#portfolio" class="btn-outline">Our Work</a>
+        </div>
+        <div class="hero-facts reveal-3d">
+          <div class="fact-item"><span class="fact-num">6</span><span class="fact-label">years</span></div>
+          <div class="fact-item"><span class="fact-num">12K+</span><span class="fact-label">clients</span></div>
+          <div class="fact-item"><span class="fact-num">5</span><span class="fact-label">masters</span></div>
+        </div>
+      </div>
+      <div class="scroll-hint reveal-3d"><span>↓</span></div>
+    </section>
+    <section class="page" data-index="1" id="services">
+      <div class="section-content">
+        <div class="section-header reveal-3d"><h2 class="section-title">SERVICES</h2><p class="section-subtitle">Everything for the modern gentleman</p></div>
+        <div class="cards-grid reveal-3d">
+          <div class="card"><div class="card-icon">✂️</div><h3 class="card-title">Haircut &amp; Styling</h3><p class="card-text">Classic, fade, undercut — any complexity</p></div>
+          <div class="card"><div class="card-icon">🪒</div><h3 class="card-title">Hot Shave</h3><p class="card-text">Straight razor, hot towel, premium oil</p></div>
+          <div class="card"><div class="card-icon">🧔</div><h3 class="card-title">Beard Styling</h3><p class="card-text">Shaping, trimming, grooming products</p></div>
+          <div class="card"><div class="card-icon">💆</div><h3 class="card-title">Grooming</h3><p class="card-text">Masks, scrubs, skin and beard treatments</p></div>
+        </div>
+      </div>
+    </section>
+    <section class="page" data-index="2" id="portfolio">
+      <div class="section-content">
+        <div class="section-header reveal-3d"><h2 class="section-title">OUR WORK</h2><p class="section-subtitle">Selected styles</p></div>
+        <div class="cards-grid reveal-3d">
+          <div class="card"><div class="card-icon">💇</div><h3 class="card-title">Skin Fade + Beard</h3><p class="card-text">Classic skin fade with lined beard</p></div>
+          <div class="card"><div class="card-icon">🎯</div><h3 class="card-title">Textured Crop</h3><p class="card-text">Modern textured cut for thick hair</p></div>
+          <div class="card"><div class="card-icon">✨</div><h3 class="card-title">Classic Slick Back</h3><p class="card-text">Impeccable slick back with hot shave</p></div>
+          <div class="card"><div class="card-icon">🔥</div><h3 class="card-title">Mid Fade</h3><p class="card-text">Mid fade with sharp line definition</p></div>
+        </div>
+      </div>
+    </section>
+    <section class="page" data-index="3" id="process">
+      <div class="section-content">
+        <div class="section-header reveal-3d"><h2 class="section-title">HOW IT WORKS</h2></div>
+        <div class="process-steps reveal-3d">
+          <div class="step"><div class="step-num">01</div><div class="step-icon">📅</div><h3 class="step-title">Book</h3><p class="step-text">Online or by phone, exact time slot</p></div>
+          <div class="step-arrow">→</div>
+          <div class="step"><div class="step-num">02</div><div class="step-icon">☕</div><h3 class="step-title">Welcome</h3><p class="step-text">Drink of choice, meet your barber</p></div>
+          <div class="step-arrow">→</div>
+          <div class="step"><div class="step-num">03</div><div class="step-icon">✂️</div><h3 class="step-title">Service</h3><p class="step-text">Haircut with full consultation</p></div>
+          <div class="step-arrow">→</div>
+          <div class="step"><div class="step-num">04</div><div class="step-icon">💫</div><h3 class="step-title">Finish</h3><p class="step-text">Styling, photo, aftercare tips</p></div>
+        </div>
+      </div>
+    </section>
+    <section class="page" data-index="4" id="about">
+      <div class="section-content">
+        <div class="section-header reveal-3d"><h2 class="section-title">BARBER CODE</h2><p class="section-subtitle">Premium barbershop since 2018</p></div>
+        <div class="about-layout reveal-3d">
+          <div class="about-text">
+            <p>BARBER CODE is not just a haircut — it's a ritual. We create an atmosphere where every man feels like a king.</p>
+            <p>Our master from London brings international technique to every session. Classic methods, modern aesthetics.</p>
+            <div class="about-stats">
+              <div class="stat"><span class="stat-num accent-gold">6</span><span class="stat-label">years</span></div>
+              <div class="stat"><span class="stat-num accent-gold">12K+</span><span class="stat-label">clients</span></div>
+              <div class="stat"><span class="stat-num accent-gold">5</span><span class="stat-label">barbers</span></div>
+              <div class="stat"><span class="stat-num accent-gold">🇬🇧</span><span class="stat-label">London master</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="page" data-index="5" id="contact">
+      <div class="section-content">
+        <div class="section-header reveal-3d"><h2 class="section-title">BOOK YOUR VISIT</h2><p class="section-subtitle">Limited spots — book ahead</p></div>
+        <div class="contact-layout reveal-3d">
+          <div class="contact-info">
+            <div class="contact-item"><span class="contact-icon">📞</span><a href="tel:+74954567890">+7 (495) 456-78-90</a></div>
+            <div class="contact-item"><span class="contact-icon">✉️</span><a href="mailto:book@barbercode.ru">book@barbercode.ru</a></div>
+            <div class="contact-item"><span class="contact-icon">📍</span><span>Moscow, Kutuzovsky Ave., 34</span></div>
+            <div class="contact-item"><span class="contact-icon">🕐</span><span>Daily: 10:00–22:00</span></div>
+          </div>
+          <form class="contact-form" id="contact-form">
+            <input type="text" placeholder="Your name" required />
+            <input type="tel" placeholder="Phone number" required />
+            <select><option value="">Service...</option><option>Haircut</option><option>Hot Shave</option><option>Beard Styling</option><option>Full Grooming</option></select>
+            <button type="submit" class="btn-primary" id="submit-btn">Book Now</button>
+          </form>
+        </div>
+        <footer class="site-footer"><p>© 2024 BARBER CODE. All rights reserved.</p></footer>
+      </div>
+    </section>
+  </div></div>
+  <script src="app.js"></script>
+</body>
+</html>
